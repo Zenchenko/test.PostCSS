@@ -1,0 +1,17 @@
+
+main {
+	width: 100px;
+	height: auto;
+	min-height: 100vh;
+	background-color: #3f3f3f;
+}
+
+header {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: flex;
+	width: 1170px;
+	height: auto;
+}
