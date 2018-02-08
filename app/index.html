@@ -11,29 +11,40 @@
     <meta name="keywords" content="Postcss + Gulp">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 <title>100% шаблон HTML5</title>
 
 </head>
 
-<body>
+<body class="df">
 
-<main>
+<main class="main df center colum">
 
-	<header>
-       <img src="https://demo.htmlhook.ru/logo.png" alt="Логотип" height="50" width="50">
+	<header class="header df center">
 
-       <h1><a href="#">Заголовок сайта</a></h1>
-       <p>Краткое описание</p>
+		<div class="logo_bloc df center">
+
+			<img id="logo_img" class="logo_img" src="img/icon.png" alt="Логотип" height="50" width="50">
+			<p class="logo">logo</p>
+
+		</div>
+
+		<nav class="nav df center end"> 
+
+			<ul class="nav_punkt df">
+				<li class="header_ul_li df"><a href="#">About</a></li>
+				<li class="header_ul_li df"><a href="#">Services</a></li>
+				<li class="header_ul_li df"><a href="#">Contact</a></li>
+			</ul>
+
+		</nav>
+
 	</header>
 
-	<nav>
-	    <ul>
-	        <li><a href="#">Главная</a></li>
-	        <li><a href="#">О Нас</a></li>
-	        <li><a href="#">Контакты</a></li>
-	   </ul>
-	</nav>
+		<h1><a href="#">Заголовок сайта</a></h1>
+		<p>Краткое описание</p>
+
 	<div class="content">
 
 	     <article>
