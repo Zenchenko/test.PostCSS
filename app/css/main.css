@@ -1,3 +1,21 @@
+/**  
+
+*  
+
+font-family: "HelveticaNeue";
+
+**/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}	
+
+* a {
+	text-decoration: none;
+}
+
 
 /**Flex atom**/
 
@@ -32,67 +50,303 @@
 	justify-content: flex-end;
 }
 
-/**end**/
+/**body**/
 
+.body {
+	width: 100%;
+	justify-content: center;
+	-ms-align-items: center;
+}
 
-/**main**/
+/**wraper**/
 
 .main {
-	max-width: 1020px;
-	width: 100%;
-	min-height: 100vh;
-	background-color: #fff;
+	width: 1020px; 
+	max-width: 100%;
+
 }
 
-body {
-	min-width: 1020px;
-	height: 100vh;
+/**main **/
+
+ .wraper {
+	width: 100%;
+	min-height: 100vh;
 }
+
 
 /**header**/
 
-.header { 
-	min-width: 100%;
+ .header {
+ 	width: 100%;
+ 	height: 50px;
+ 	background: #000000;
+ 	justify-content: space-between;
+ }
+
+ /**logo_bloc**/
+
+ .logo_bloc {
+ 	margin-left: 40px;
+ }
+
+ .logo_bloc p {
+ 	color: #fff;
+ 	text-transform: uppercase; /* Заглавные буквы */
+ }
+
+ /**logo_img**/
+
+ .logo_img {
+ 	width: 25px;
+ 	height: 25px;
+ }
+
+ /**nav**/
+
+ .nav {
+ 	width: 240px;
+	height: 50px;
+	padding-right: 35px;
+ }
+
+ .nav_ul{
+	height: 100%;
+}
+
+
+ .header_ul_li {
+ 	width: 80px;
+ 	border-left: 1px solid #333333;
+ 	color: #fff;
+ }
+
+ .header_ul_li a {
+ 	color: #FFF;
+ }
+
+ .header_ul_li a:hover {
+ 	color: #00c0ff;
+ }
+
+
+
+ /**bloc**/
+
+ .bloc {
+	width: 100%;
+	height: 400px;
+	z-index: 2;
+}
+
+ .blur-bg {
+	z-index: 1;
+	max-width: 1020px;
+	width: 100%;
+	height: 330px;
+	position: absolute;
+	top: 50px;
+}
+
+.bloc1, .bloc2 {
+	width: 50%;
+	height: 100%;
+	z-index: 2
+}
+
+.bloc_bloc1_h1 {
+	margin-top: 65px;
+	margin-left: 40px;
+}
+
+.bloc_bloc1_h3 {
+	margin-left: 40px;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.bloc_a_p {
+	margin-left: 40px;
+	color: #fff;
+}
+
+.bloc_a_p a, .bloc_a_p, .bloc_bloc1_h1, .bloc_bloc1_h3{
+	color: #fff;
+}
+
+.bloc_a_p a:hover{
+	text-decoration: underline;
+}
+
+.bloc_a {
+  background-color: #0090bf;
+  margin-top: 40px;
+  width: 280px;
+  height: 76px;
+}
+
+.bloc-p {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+/**bloc2**/
+
+.bloc2 img{
+	width: 80%;
 	height: auto;
-	font-size: 1em;
-	background: #222;
+}
+
+
+
+
+
+
+/**content**/
+
+.content {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
 	justify-content: space-between;
 }
 
-.logo_img {
-	width: 25px;
-	height: 25px;
-	padding-left: 4em; 
+
+
+
+
+		/**content_bloc1**/
+
+.content_bloc1 {
+	width: 75%;
+	justify-content: space-between;
 }
 
-.logo {
-	text-transform: uppercase; /* Заглавные буквы */
-	color: #fff;
+.content_bloc1_cart {
+	margin-top: 60px;
 }
 
-.header_ul_li {
-	width: 100px;
+.cartochca {
+	max-width: 30%;
 	height: 100%;
-	border-left: 1px #333333;
-	border-right: 1px #333333;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
 }
 
-.nav_ul_li a {
-	color: #bbb;
-}
 
-.nav { 
-	width: 100%;
-	height: 50px;
-	color: #000000;
-	font-size: 1.4em;
-}
 
-.nav ul li a {
+
+
+		/**content_bloc2**/
+
+.content_bloc2 {
+	width: 20%;
+	height: 315px;	
+	max-height: 60%;
+	padding: 30px;
+	padding-top: 40px;
+	background-color: #444444;
 	color: #fff;
-	text-decoration: none;
 }
 
-.nav_punkt {
-	padding: 55px;
+.content_bloc2_h2_bpttom {
+	margin-top: 30px;
+}
+
+.content_bloc2_contact {
+	margin-top: 20px;
+	margin-left: -10px;
+}
+
+.content_bloc2_contact img {
+	margin-left: 10px;
+}
+
+
+/**nevslitter**/
+
+.newsletter {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  background-color: #eeeeee;
+}
+
+.newsletter_bloc1 {
+width: 63%;
+}
+
+.newsletter_bloc1 p {
+	margin-left: 40px;
+	font-size: 22px;
+}
+
+.newsletter_bloc2 {
+	width: 380px;
+	max-width: 37%;
+}
+
+
+
+
+/**newsletter_bloc2_otpravka**/
+
+.newsletter_bloc2_otpravka {
+	width: 340px;
+	max-width: 90%;
+	height: 40px;
+}
+
+
+
+
+.newsletter_bloc2_otpravka_bloc1 {
+	width: 220px;
+	height: 40px;
+	background-color: #fff;
+}
+
+.newsletter_bloc2_otpravka_bloc2 {
+	width: 120px;
+	height: 40px;
+	background-color: #0090bf;
+}
+
+/**footer**/
+
+.footer {
+  width: 100%;
+  height: 100px; 
+  background-color: #444444;
+  color: #fff;
+}
+
+.fotter_bloc1 {
+	width: 50%;
+	height: 100px;
+	justify-content: flex-start;
+}
+
+.fotter_bloc1 p {
+	margin-left: 40px;
+	justify-content: flex-start;
+}
+
+.fotter_bloc2 {
+	width: 50%;
+	height: 100px;
+	justify-content: flex-end;
+}
+
+.fotter_bloc2_a {
+	margin-right: 20px;
+}
+
+.fotter_bloc2_a a {
+	margin-right: 20px;
+	color: #fff;
+}
+
+.fotter_bloc2_a a:hover {
+	color: #0090bf;
 }
